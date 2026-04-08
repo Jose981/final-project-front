@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/transacciones";
+const API_URL = `${import.meta.env.VITE_API_URL}/transacciones`;
 
 export const obtenerTransacciones = async () => {
   const res = await fetch(API_URL);
